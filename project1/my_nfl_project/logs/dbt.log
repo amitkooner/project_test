@@ -1,0 +1,47 @@
+[0m23:23:54.314421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111f39350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111f69790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111f77f90>]}
+
+
+============================== 23:23:54.346654 | f5c97100-252c-44ee-b769-e4a524db961c ==============================
+[0m23:23:54.346654 [info ] [MainThread]: Running with dbt=1.7.9
+[0m23:23:54.347844 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'warn_error': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'target_path': 'None', 'introspect': 'True', 'invocation_command': 'dbt run --models summarize_plays_by_game', 'partial_parse': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/Users/AKooner/.dbt', 'log_format': 'default', 'log_path': '/Users/AKooner/Desktop/coding/data_engineering_zoomcamp/project1/my_nfl_project/logs', 'debug': 'False', 'use_colors': 'True', 'log_cache_events': 'False', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'version_check': 'True', 'no_print': 'None'}
+[0m23:23:58.368722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f5c97100-252c-44ee-b769-e4a524db961c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14725ac10>]}
+[0m23:23:58.442260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f5c97100-252c-44ee-b769-e4a524db961c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14721aa10>]}
+[0m23:23:58.451911 [info ] [MainThread]: Registered adapter: bigquery=1.7.6
+[0m23:23:58.491901 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m23:23:58.492897 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:23:58.493332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f5c97100-252c-44ee-b769-e4a524db961c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x147627150>]}
+[0m23:23:59.241652 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m23:23:59.259603 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m23:23:59.264119 [debug] [MainThread]: 1699: static parser successfully parsed example/summarize_plays_by_game.sql
+[0m23:23:59.417036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f5c97100-252c-44ee-b769-e4a524db961c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1476d5dd0>]}
+[0m23:23:59.432001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f5c97100-252c-44ee-b769-e4a524db961c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x147a04990>]}
+[0m23:23:59.432356 [info ] [MainThread]: Found 3 models, 4 tests, 0 sources, 0 exposures, 0 metrics, 454 macros, 0 groups, 0 semantic models
+[0m23:23:59.432695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f5c97100-252c-44ee-b769-e4a524db961c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14793ed90>]}
+[0m23:23:59.433899 [info ] [MainThread]: 
+[0m23:23:59.434709 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:23:59.435652 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_sincere-nirvana-340100'
+[0m23:23:59.435928 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:24:00.340003 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_sincere-nirvana-340100, now create_sincere-nirvana-340100_nfl_dataset)
+[0m23:24:00.341410 [debug] [ThreadPool]: Creating schema "database: "sincere-nirvana-340100"
+schema: "nfl_dataset"
+"
+[0m23:24:00.347447 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:24:00.427556 [debug] [ThreadPool]: On create_sincere-nirvana-340100_nfl_dataset: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "my_nfl_project", "target_name": "dev", "connection_name": "create_sincere-nirvana-340100_nfl_dataset"} */
+create schema if not exists `sincere-nirvana-340100`.`nfl_dataset`
+  
+[0m23:24:00.844843 [error] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=sincere-nirvana-340100&j=bq:US:54ade99e-5bc5-44dd-b763-8f8708977120&page=queryresults
+[0m23:24:00.845644 [debug] [ThreadPool]: BigQuery adapter: Unhandled error while running:
+macro create_schema
+[0m23:24:00.846034 [debug] [ThreadPool]: BigQuery adapter: Database Error
+  Access Denied: Project sincere-nirvana-340100: User does not have bigquery.jobs.create permission in project sincere-nirvana-340100.
+[0m23:24:00.847713 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:24:00.847909 [debug] [MainThread]: Connection 'create_sincere-nirvana-340100_nfl_dataset' was properly closed.
+[0m23:24:00.848075 [info ] [MainThread]: 
+[0m23:24:00.848282 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 1.41 seconds (1.41s).
+[0m23:24:00.848604 [error] [MainThread]: Encountered an error:
+Database Error
+  Access Denied: Project sincere-nirvana-340100: User does not have bigquery.jobs.create permission in project sincere-nirvana-340100.
+[0m23:24:00.848842 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 6.9500313, "process_user_time": 3.448524, "process_kernel_time": 0.677322, "process_mem_max_rss": "242352128", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m23:24:00.849100 [debug] [MainThread]: Command `dbt run` failed at 23:24:00.849043 after 6.95 seconds
+[0m23:24:00.849289 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111f749d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111f748d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a2edd0>]}
+[0m23:24:00.849497 [debug] [MainThread]: Flushing usage events

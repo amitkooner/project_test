@@ -1,0 +1,84 @@
+[0m23:06:25.422734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107587050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075a56d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075c3f90>]}
+
+
+============================== 23:06:25.426502 | 5ae9562b-6833-421a-9d60-4259b077359a ==============================
+[0m23:06:25.426502 [info ] [MainThread]: Running with dbt=1.7.9
+[0m23:06:25.427402 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'profiles_dir': '/Users/AKooner/.dbt', 'log_path': 'logs', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'printer_width': '80', 'log_format': 'default', 'invocation_command': 'dbt init my_nfl_project', 'partial_parse': 'True', 'use_colors': 'True', 'fail_fast': 'False', 'warn_error': 'None', 'indirect_selection': 'eager', 'version_check': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'no_print': 'None', 'debug': 'False', 'log_cache_events': 'False'}
+[0m23:06:25.428548 [debug] [MainThread]: Starter project path: /opt/anaconda3/lib/python3.11/site-packages/dbt/include/starter_project
+[0m23:06:25.437253 [info ] [MainThread]: 
+Your new dbt project "my_nfl_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m23:06:25.437975 [info ] [MainThread]: Setting up your profile.
+[0m23:08:35.934114 [info ] [MainThread]: Profile my_nfl_project written to /Users/AKooner/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m23:08:35.937983 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 130.5734, "process_user_time": 2.504281, "process_kernel_time": 0.443626, "process_mem_max_rss": "226541568", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m23:08:35.939106 [debug] [MainThread]: Command `dbt init` succeeded at 23:08:35.938588 after 130.57 seconds
+[0m23:08:35.940199 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1017a2910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x137686290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1017fab10>]}
+[0m23:08:35.941176 [debug] [MainThread]: Flushing usage events
+[0m23:08:46.245546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10624ac50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a14450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106277d10>]}
+
+
+============================== 23:08:46.255233 | 2c55b83b-3b93-4861-b974-ecf07c715ac0 ==============================
+[0m23:08:46.255233 [info ] [MainThread]: Running with dbt=1.7.9
+[0m23:08:46.255652 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'invocation_command': 'dbt debug', 'quiet': 'False', 'partial_parse': 'True', 'log_path': 'logs', 'use_colors': 'True', 'log_cache_events': 'False', 'warn_error': 'None', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'fail_fast': 'False', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'no_print': 'None', 'version_check': 'True', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'printer_width': '80', 'write_json': 'True', 'debug': 'False', 'profiles_dir': '/Users/AKooner/.dbt'}
+[0m23:08:46.256379 [info ] [MainThread]: dbt version: 1.7.9
+[0m23:08:46.256645 [info ] [MainThread]: python version: 3.11.7
+[0m23:08:46.256975 [info ] [MainThread]: python path: /opt/anaconda3/bin/python
+[0m23:08:46.257251 [info ] [MainThread]: os info: macOS-14.1.1-arm64-arm-64bit
+[0m23:08:47.602582 [info ] [MainThread]: Using profiles dir at /Users/AKooner/.dbt
+[0m23:08:47.603152 [info ] [MainThread]: Using profiles.yml file at /Users/AKooner/.dbt/profiles.yml
+[0m23:08:47.603515 [info ] [MainThread]: Using dbt_project.yml file at /Users/AKooner/Desktop/coding/data_engineering_zoomcamp/project1/dbt_project.yml
+[0m23:08:47.603935 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m23:08:47.604471 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 1.4015392, "process_user_time": 2.393497, "process_kernel_time": 0.429795, "process_mem_max_rss": "233701376", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m23:08:47.604906 [debug] [MainThread]: Command `dbt debug` failed at 23:08:47.604821 after 1.40 seconds
+[0m23:08:47.605152 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106238850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100b066d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100b5eb50>]}
+[0m23:08:47.605347 [debug] [MainThread]: Flushing usage events
+[0m23:16:56.004009 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ba6f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106bb3310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106bb39d0>]}
+
+
+============================== 23:16:56.006262 | a50dd043-2a33-434e-92f2-fc7e365c6adb ==============================
+[0m23:16:56.006262 [info ] [MainThread]: Running with dbt=1.7.9
+[0m23:16:56.006709 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'use_colors': 'True', 'log_path': 'logs', 'indirect_selection': 'eager', 'partial_parse': 'True', 'warn_error': 'None', 'log_cache_events': 'False', 'fail_fast': 'False', 'version_check': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'cache_selected_only': 'False', 'profiles_dir': '/Users/AKooner/.dbt', 'no_print': 'None', 'debug': 'False', 'quiet': 'False', 'static_parser': 'True', 'introspect': 'True', 'write_json': 'True'}
+[0m23:16:56.007272 [info ] [MainThread]: dbt version: 1.7.9
+[0m23:16:56.007938 [info ] [MainThread]: python version: 3.11.7
+[0m23:16:56.008484 [info ] [MainThread]: python path: /opt/anaconda3/bin/python
+[0m23:16:56.008904 [info ] [MainThread]: os info: macOS-14.1.1-arm64-arm-64bit
+[0m23:16:57.526010 [info ] [MainThread]: Using profiles dir at /Users/AKooner/.dbt
+[0m23:16:57.526644 [info ] [MainThread]: Using profiles.yml file at /Users/AKooner/.dbt/profiles.yml
+[0m23:16:57.527036 [info ] [MainThread]: Using dbt_project.yml file at /Users/AKooner/Desktop/coding/data_engineering_zoomcamp/project1/dbt_project.yml
+[0m23:16:57.527581 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m23:16:57.529600 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 1.5892671, "process_user_time": 2.336292, "process_kernel_time": 0.412689, "process_mem_max_rss": "233914368", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m23:16:57.529951 [debug] [MainThread]: Command `dbt debug` failed at 23:16:57.529874 after 1.59 seconds
+[0m23:16:57.530257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10585d950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100d966d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ba4e90>]}
+[0m23:16:57.530511 [debug] [MainThread]: Flushing usage events
+[0m23:22:09.189563 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120a8ffd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120ab3990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120ab3fd0>]}
+
+
+============================== 23:22:09.192189 | 86b042ea-abad-48b5-b843-0ae381c28da9 ==============================
+[0m23:22:09.192189 [info ] [MainThread]: Running with dbt=1.7.9
+[0m23:22:09.192803 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'log_cache_events': 'False', 'use_colors': 'True', 'static_parser': 'True', 'write_json': 'True', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/Users/AKooner/.dbt', 'partial_parse': 'True', 'printer_width': '80', 'use_experimental_parser': 'False', 'target_path': 'None', 'introspect': 'True', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'warn_error': 'None', 'invocation_command': 'dbt run --models summarize_plays_by_game', 'no_print': 'None', 'quiet': 'False', 'log_path': 'logs'}
+[0m23:22:09.193156 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/AKooner/Desktop/coding/data_engineering_zoomcamp/project1/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:22:09.194804 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.14935371, "process_user_time": 1.017206, "process_kernel_time": 0.189859, "process_mem_max_rss": "114180096", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m23:22:09.195162 [debug] [MainThread]: Command `dbt run` failed at 23:22:09.195077 after 0.15 seconds
+[0m23:22:09.195448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10114eb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120ab3a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120ab3b90>]}
+[0m23:22:09.195715 [debug] [MainThread]: Flushing usage events
